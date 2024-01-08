@@ -213,7 +213,7 @@
         "version": "1.1",
         "icon": "brush.jpg",
         "author": "jxxghp",
-        "level": 2
+        "level": 1
     },
     "DownloadingMsg": {
         "name": "下载进度推送",
