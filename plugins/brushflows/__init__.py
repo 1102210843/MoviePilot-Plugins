@@ -23,7 +23,7 @@ from app.utils.string import StringUtils
 lock = threading.Lock()
 
 
-class BrushFlow(_PluginBase):
+class BrushFlows(_PluginBase):
     # 插件名称
     plugin_name = "站点刷流"
     # 插件描述
@@ -37,7 +37,7 @@ class BrushFlow(_PluginBase):
     # 作者主页
     author_url = "https://github.com/jxxghp"
     # 插件配置项ID前缀
-    plugin_config_prefix = "brushflow_"
+    plugin_config_prefix = "brushflows_"
     # 加载顺序
     plugin_order = 21
     # 可使用的用户级别
