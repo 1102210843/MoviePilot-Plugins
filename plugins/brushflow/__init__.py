@@ -23,9 +23,9 @@ from app.utils.string import StringUtils
 lock = threading.Lock()
 
 
-class BrushFlows(_PluginBase):
+class BrushFlow(_PluginBase):
     # 插件名称
-    plugin_name = "X站点刷流"
+    plugin_name = "站点刷流"
     # 插件描述
     plugin_desc = "自动托管刷流，将会提高对应站点的访问频率。"
     # 插件图标
@@ -39,9 +39,9 @@ class BrushFlows(_PluginBase):
     # 插件配置项ID前缀
     plugin_config_prefix = "brushflows_"
     # 加载顺序
-    plugin_order = 0
+    plugin_order = 21
     # 可使用的用户级别
-    auth_level = 1
+    auth_level = 2
 
     # 私有属性
     siteshelper = None
