@@ -118,8 +118,8 @@ class BrushFlowSelf(_PluginBase):
             self._clear_task = config.get("clear_task")
 
             # 过滤掉已删除的站点
-            self._brushsites = [site.get("id") for site in self.sites.get_indexers() if
-                                not site.get("public") and site.get("id") in self._brushsites]
+            # self._brushsites = [site.get("id") for site in self.sites.get_indexers() if
+            #                     not site.get("public") and site.get("id") in self._brushsites]
 
             # 保存配置
             self.__update_config()
