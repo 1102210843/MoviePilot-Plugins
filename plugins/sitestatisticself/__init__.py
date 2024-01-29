@@ -35,7 +35,7 @@ lock = Lock()
 
 class SiteStatisticSelf(_PluginBase):
     # 插件名称
-    plugin_name = "站点数据统计"
+    plugin_name = "站点数据统计-self"
     # 插件描述
     plugin_desc = "自动统计和展示站点数据。"
     # 插件图标

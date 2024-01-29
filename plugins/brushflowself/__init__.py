@@ -25,7 +25,7 @@ lock = threading.Lock()
 
 class BrushFlowSelf(_PluginBase):
     # 插件名称
-    plugin_name = "站点刷流"
+    plugin_name = "站点刷流-self"
     # 插件描述
     plugin_desc = "自动托管刷流，将会提高对应站点的访问频率。"
     # 插件图标

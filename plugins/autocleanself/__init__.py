@@ -21,7 +21,7 @@ from app.schemas.types import EventType
 
 class AutoCleanSelf(_PluginBase):
     # 插件名称
-    plugin_name = "定时清理媒体库"
+    plugin_name = "定时清理媒体库-self"
     # 插件描述
     plugin_desc = "定时清理用户下载的种子、源文件、媒体库文件。"
     # 插件图标

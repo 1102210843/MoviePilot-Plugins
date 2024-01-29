@@ -30,7 +30,7 @@ from app.utils.timer import TimerUtils
 
 class AutoSignInSelf(_PluginBase):
     # 插件名称
-    plugin_name = "站点自动签到"
+    plugin_name = "站点自动签到-self"
     # 插件描述
     plugin_desc = "自动模拟登录站点、签到。"
     # 插件图标

@@ -25,7 +25,7 @@ lock = Lock()
 
 class DoubanSyncSelf(_PluginBase):
     # 插件名称
-    plugin_name = "豆瓣想看"
+    plugin_name = "豆瓣想看-self"
     # 插件描述
     plugin_desc = "同步豆瓣想看数据，自动添加订阅。"
     # 插件图标

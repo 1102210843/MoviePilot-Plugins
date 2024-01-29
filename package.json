@@ -1,6 +1,6 @@
 {
     "AutoSignInSelf": {
-        "name": "站点自动签到",
+        "name": "站点自动签到-self",
         "description": "自动模拟登录站点、签到。",
         "version": "1.1",
         "icon": "signin.png",
@@ -8,7 +8,7 @@
         "level": 1
     },
     "SiteStatisticSelf": {
-        "name": "站点数据统计",
+        "name": "站点数据统计-self",
         "description": "自动统计和展示站点数据。",
         "version": "1.0",
         "icon": "statistic.png",
@@ -16,7 +16,7 @@
         "level": 1
     },
     "SiteRefreshSelf": {
-        "name": "站点自动更新",
+        "name": "站点自动更新-self",
         "description": "使用浏览器模拟登录站点获取Cookie和UA。",
         "version": "1.0",
         "icon": "Chrome_A.png",
@@ -24,7 +24,7 @@
         "level": 1
     },
     "DoubanSyncSelf": {
-        "name": "豆瓣想看",
+        "name": "豆瓣想看-self",
         "description": "同步豆瓣想看数据，自动添加订阅。",
         "version": "1.2",
         "icon": "douban.png",
@@ -32,7 +32,7 @@
         "level": 1
     },
     "TorrentRemoverSelf": {
-        "name": "自动删种",
+        "name": "自动删种-self",
         "description": "自动删除下载器中的下载任务。",
         "version": "1.1",
         "icon": "delete.jpg",
@@ -40,7 +40,7 @@
         "level": 1
     },
     "BrushFlowSelf": {
-        "name": "站点刷流",
+        "name": "站点刷流-self",
         "description": "自动托管刷流，将会提高对应站点的访问频率。",
         "version": "1.1",
         "icon": "brush.jpg",
@@ -48,7 +48,7 @@
         "level": 1
     },
     "AutoCleanSelf": {
-        "name": "定时清理媒体库",
+        "name": "定时清理媒体库-self",
         "description": "定时清理用户下载的种子、源文件、媒体库文件。",
         "version": "1.0",
         "icon": "clean.png",

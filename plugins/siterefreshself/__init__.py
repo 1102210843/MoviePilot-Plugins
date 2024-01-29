@@ -11,7 +11,7 @@ from app.utils.string import StringUtils
 
 class SiteRefreshSelf(_PluginBase):
     # 插件名称
-    plugin_name = "站点自动更新"
+    plugin_name = "站点自动更新-self"
     # 插件描述
     plugin_desc = "使用浏览器模拟登录站点获取Cookie和UA。"
     # 插件图标
