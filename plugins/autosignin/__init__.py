@@ -46,7 +46,7 @@ class AutoSignIn(_PluginBase):
     # 加载顺序
     plugin_order = 0
     # 可使用的用户级别
-    auth_level = 2
+    auth_level = 1
 
     # 私有属性
     sites: SitesHelper = None
