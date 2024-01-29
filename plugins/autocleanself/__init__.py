@@ -29,7 +29,7 @@ class AutoCleanSelf(_PluginBase):
     # 插件版本
     plugin_version = "1.0"
     # 插件作者
-    plugin_author = "thsrite"
+    plugin_author = "Sunny"
     # 作者主页
     author_url = "https://github.com/thsrite"
     # 插件配置项ID前缀
