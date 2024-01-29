@@ -273,8 +273,13 @@ class BrushFlowSelf(_PluginBase):
         拼装插件配置页面，需要返回两块数据：1、页面配置；2、数据结构
         """
         # 站点的可选项
-        site_options = [{"title": site.get("name"), "value": site.get("id")}
-                        for site in self.siteshelper.get_indexers()]
+        # 站点的可选项（内置站点 + 自定义站点）
+        customSites = self.__custom_sites()
+
+        site_options = ([{"title": site.name, "value": site.id}
+                         for site in self.siteoper.list_order_by_pri()]
+                        + [{"title": site.get("name"), "value": site.get("id")}
+                           for site in customSites])
         return [
             {
                 'component': 'VForm',
@@ -1935,3 +1940,38 @@ class BrushFlowSelf(_PluginBase):
         except Exception as e:
             print(str(e))
             return 0
+
+    def __custom_sites(self) -> List[Any]:
+        custom_sites = []
+        custom_sites_config = self.get_config("CustomSites")
+        if custom_sites_config and custom_sites_config.get("enabled"):
+            custom_sites = custom_sites_config.get("sites")
+        return custom_sites
+
+    @eventmanager.register(EventType.SiteDeleted)
+    def site_deleted(self, event):
+        """
+        删除对应站点选中
+        """
+        site_id = event.event_data.get("site_id")
+        config = self.get_config()
+        if config:
+            statistic_sites = config.get("statistic_sites")
+            if statistic_sites:
+                if isinstance(statistic_sites, str):
+                    statistic_sites = [statistic_sites]
+
+                # 删除对应站点
+                if site_id:
+                    statistic_sites = [site for site in statistic_sites if int(site) != int(site_id)]
+                else:
+                    # 清空
+                    statistic_sites = []
+
+                # 若无站点，则停止
+                if len(statistic_sites) == 0:
+                    self._enabled = False
+
+                self._statistic_sites = statistic_sites
+                # 保存配置
+                self.__update_config()
